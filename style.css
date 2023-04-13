@@ -1,0 +1,182 @@
+body {
+    background-image: url('img/PS4.jpg');
+
+}
+
+header {
+    background: rgba(0, 20, 19, 0.966);
+    width: 618px;
+    height: 10x;
+    padding-top: 0%;
+    margin: 1px;
+    text-align: center;
+}
+
+img {
+    padding: 1px;
+}
+
+.oznaciti {
+    color: wheat;
+}
+
+.nav {
+    text-align: center;
+    font-size: 35px;
+    flex-direction: column;
+    position: absolute;
+    padding: 16px;
+    margin-top: 300px;
+}
+
+
+#wrapper {
+    width: 100%;
+    background-color: rgba(0, 20, 19, 0.966);
+    height: 700px;
+    width: 518px;
+    padding: 1px;
+    margin: 1px;
+}
+
+h1 {
+    color: rgba(0, 255, 242, 0.829);
+    text-align: center;
+}
+
+h2 {
+    color: gold;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    color: gold;
+    font-size: 2em;
+    text-align: center;
+}
+
+strong {
+    color: gold;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+p {
+    color: gold;
+    font-size: 1.2em;
+    text-align: center;
+    text-align-last: auto;
+}
+
+.iframe {
+    float: left;
+}
+
+@media screen and (max-width:390px) {
+    body {
+
+        width: 100%;
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    body {
+
+        width: 100%;
+        font-size: 1em;
+    }
+
+}
+
+
+@media screen and (max-width:350px) {
+    body {
+
+        width: 50%;
+        font-size: 1em;
+
+    }
+
+}
+
+#main-container {
+    perspective: 400px;
+    position: relative;
+    width: 100px;
+    height: 350px;
+    margin: 90px auto;
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    }
+
+    45% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 160deg);
+    }
+
+    55% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 160deg);
+    }
+
+    100% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+#tile-container {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    transform-style: preserve-3d;
+    animation-name: carousel-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.tile {
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;
+    opacity: 0.95;
+}
+
+
+#tile-1 {
+
+    transform: rotateY(20deg) translateZ(300px);
+}
+
+#tile-2 {
+
+    transform: rotateY(72deg) translateZ(300px);
+}
+
+#tile-3 {
+
+    transform: rotateY(134deg) translateZ(300px);
+}
+
+#tile-4 {
+
+    transform: rotateY(200deg) translateZ(300px);
+}
+
+#tile-5 {
+
+    transform: rotateY(260deg) translateZ(300px);
+}
+
+#tile-6 {
+
+    transform: rotateY(320deg) translateZ(300px);
+}
+
